@@ -1,9 +1,5 @@
-package com.sookiwi.kotlinplayground
+package com.sookiwi.kotlinplayground.leet125
 
-import org.assertj.core.api.Assertions.assertThat
-import org.junit.jupiter.api.Test
-
-@Suppress("MemberVisibilityCanBePrivate")
 class Solution {
     fun isPalindrome(s: String): Boolean {
         val normalizedS = s.toLowerCase().replace(Regex("[^A-Za-z0-9]"), "")
@@ -14,11 +10,5 @@ class Solution {
             }
         }
         return isPal
-    }
-
-    @Test
-    fun test() {
-        assertThat(isPalindrome("A man, a plan, a canal: Panama")).isTrue()
-        assertThat(isPalindrome("race a car")).isFalse()
     }
 }
